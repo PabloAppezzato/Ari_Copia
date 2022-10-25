@@ -30,7 +30,7 @@ try
         # Download file to the local directory C:\Oracle\Test\Upload
         # Note use of absolute path
         $transferResult =
-            $session.GetFiles("/RG_PRD_SAPSMB/sap/interface/in/FCCS/*.txt", "C:\Oracle\Test\Upload\", $False, $transferOptions)
+            $session.GetFiles("/RG_PRD_SAPSMB/sap/interface/in/FCCS/FCCS*", "C:\Oracle\Test\Upload\", $False, $transferOptions)
  
         # Throw on any error to emulate the default "option batch abort"
         $transferResult.Check()
